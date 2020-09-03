@@ -1,4 +1,4 @@
-<?php namespace ThyagoBrejao\Commentable;
+<?php namespace samk369\Commentable;
 
 /**
  * Part of the Laravel-Commentable package.
