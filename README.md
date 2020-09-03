@@ -1,9 +1,9 @@
 # Laravel-Commentable
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://tldrlegal.com/license/mit-license)
-[![Total Downloads](https://img.shields.io/packagist/dt/thyagobrejao/laravel-commentable.svg?style=flat-square)](https://packagist.org/packages/thyagobrejao/laravel-commentable)
+[![Total Downloads](https://img.shields.io/packagist/dt/thyagobrejao/laravel-commentable.svg?style=flat-square)](https://packagist.org/packages/samk369/laravel-commentable)
 
-Laravel Commentable adds polymorphic threaded comments to Laravel 5.1 and above. (based on dead slynova/laravel-commentable)
+Laravel Commentable adds polymorphic threaded comments to Laravel 7 and above. (based on dead slynova/laravel-commentable)
 
 This package use Nested Set pattern with [Baum](https://github.com/etrepat/baum).<br>
 [More information about Nested Set](http://en.wikipedia.org/wiki/Nested_set_model)
@@ -18,13 +18,13 @@ This package use Nested Set pattern with [Baum](https://github.com/etrepat/baum)
 
 # <a name="requirements"></a>Requirements
 
-* As Laravel 5.1 require PHP 5.5.9+, we required the same version.
+* As Laravel 7.x require PHP 7.0+, we required the same version.
 
 # <a name="getting-started"></a>Getting Started
 
 1. Require the package with [Composer](https://getcomposer.org).
     ```shell
-    $ composer require thyagobrejao/laravel-commentable
+    $ composer require samk369/laravel-commentable
     ```
 
 2. Add the package to your application service providers in `config/app.php`.
@@ -34,14 +34,14 @@ This package use Nested Set pattern with [Baum](https://github.com/etrepat/baum)
         Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         ...
-        ThyagoBrejao\Commentable\ServiceProvider::class,
+        samk369\Commentable\ServiceProvider::class,
 
     ],
     ```
 
 3. Publish the package's migrations to your application and migrate.
     ```shell
-    $ php artisan vendor:publish --provider="ThyagoBrejao\Commentable\ServiceProvider" --tag="migrations"
+    $ php artisan vendor:publish --provider="samk369\Commentable\ServiceProvider" --tag="migrations"
     $ php artisan migrate
     ```
 
