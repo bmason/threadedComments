@@ -1,5 +1,5 @@
 {
-    "name": "thyagobrejao/laravel-commentable",
+    "name": "samk369/laravel-commentable",
     "description": "Polymorphic threaded comments for Laravel",
     "keywords": ["laravel", "commentable", "comment", "threaded", "nested set"],
     "license": "MIT",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ThyagoBrejao\\Commentable\\": "src/Commentable"
+            "samk369\\Commentable\\": "src/Commentable"
         }
     }
 }
