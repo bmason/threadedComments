@@ -4,20 +4,20 @@
     "keywords": ["laravel", "commentable", "comment", "threaded", "nested set"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/thyagobrejao/laravel-commentable/issues",
-        "source": "https://github.com/thyagobrejao/laravel-commentable"
+        "issues": "https://github.com/samk369/laravel-commentable/issues",
+        "source": "https://github.com/samk369/laravel-commentable"
     },
     "authors": [
         {
-            "name": "Thyago Assunção",
-            "homepage": "https://github.com/thyagobrejao",
-            "email": "thyago.brejao@gmail.com",
+            "name": "SamK",
+            "homepage": "https://github.com/samk369",
+            "email": "samkya@outlook.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=5.5.9",
-        "baum/baum": "~1.1"
+        "php": ">=7.0",
+        "baum/baum": "v2.x-dev"
     },
     "autoload": {
         "psr-4": {
