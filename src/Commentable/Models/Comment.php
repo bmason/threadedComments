@@ -1,4 +1,4 @@
-<?php namespace ThyagoBrejao\Commentable\Models;
+<?php namespace samk369\Commentable\Models;
 
 /**
  * Part of the Laravel-Commentable package.
@@ -12,9 +12,9 @@
  * It is also available at the following URL: http://opensource.org/licenses/MIT
  *
  * @version    1.0.0
- * @author     ThyagoBrejao
+ * @author     samk369
  * @license    MIT
- * @copyright  (c) ThyagoBrejao
+ * @copyright  (c) samk369
  */
 
 use Baum\Node;
