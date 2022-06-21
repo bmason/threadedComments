@@ -1,4 +1,4 @@
-<?php namespace samk369\Commentable\Traits;
+<?php namespace BMason\ThreadedComments\Traits;
 
 /**
  * Part of the Laravel-Commentable package.
@@ -12,22 +12,34 @@
  * It is also available at the following URL: http://opensource.org/licenses/MIT
  *
  * @version    1.0.0
- * @author     samk369
+ * @author     BMason
  * @license    MIT
- * @copyright  (c) samk369
  */
 
-use samk369\Commentable\Models\Comment;
+use BMason\ThreadedComments\Models\Comment;
 
-trait Commentable
+trait ThreadedComment
 {
     /**
-     * Get all of the model's comments.
+     * Get the first level of the model's comments.
      *
      * @return Illuminate\Database\Eloquent\Relations\MorphMany
      */
     public function comments()
     {
         return $this->morphMany(Comment::class, 'commentable');
+    }
+
+
+    /**
+     * Get all of the model's comments nested under their parent.
+     *
+     * @return array of comments
+     * see BMason\ThreadedComments\Models\Comment
+     */    
+    public function threadedComments() {
+        return Comment::allNestedRepliesTo($this->id, get_class($this));
+    }
+
     }
 }

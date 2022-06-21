@@ -1,7 +1,7 @@
-<?php namespace samk369\Commentable;
+<?php namespace bpmason\threadedComments;
 
 /**
- * Part of the Laravel-Commentable package.
+ * Part of the ThreadedComments package.
  *
  * NOTICE OF LICENSE
  *
@@ -12,12 +12,11 @@
  * It is also available at the following URL: http://opensource.org/licenses/MIT
  *
  * @version    1.0.0
- * @author     ThyagoBrejao
+ * @author     BMason
  * @license    MIT
- * @copyright  (c) ThyagoBrejao
  */
 
-use Baum\Providers\BaumServiceProvider;
+
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -47,6 +46,6 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register()
     {
-        $this->app->register(BaumServiceProvider::class);
+
     }
 }
